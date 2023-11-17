@@ -10,6 +10,5 @@ public class VekPage {
     String loginEmailErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]/span[2]";
     String loginPasswordErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]";
     String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]";
-    String declineCookieFormConfirmLocator = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]";
     String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
 }

@@ -17,7 +17,7 @@ public class VekTest {
 
         if (driver.findElement(By.xpath(vekPage.cookieFormLocator)) != null) {
             driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
-            driver.findElement(By.xpath(vekPage.declineCookieFormConfirmLocator)).click();
+            driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
         }
 
         driver.findElement(By.xpath(vekPage.enterToAccountFormButtonLocator)).click();
@@ -38,7 +38,7 @@ public class VekTest {
 
         if (driver.findElement(By.xpath(vekPage.cookieFormLocator)) != null) {
             driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
-            driver.findElement(By.xpath(vekPage.declineCookieFormConfirmLocator)).click();
+            driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
         }
 
         driver.findElement(By.xpath(vekPage.enterToAccountFormButtonLocator)).click();
@@ -59,7 +59,7 @@ public class VekTest {
 
         if (driver.findElement(By.xpath(vekPage.cookieFormLocator)) != null) {
             driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
-            driver.findElement(By.xpath(vekPage.declineCookieFormConfirmLocator)).click();
+            driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
         }
 
         driver.findElement(By.xpath(vekPage.enterToAccountFormButtonLocator)).click();
@@ -80,7 +80,7 @@ public class VekTest {
 
         if (driver.findElement(By.xpath(vekPage.cookieFormLocator)) != null) {
             driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
-            driver.findElement(By.xpath(vekPage.declineCookieFormConfirmLocator)).click();
+            driver.findElement(By.xpath(vekPage.declineCookieFormLocator)).click();
         }
 
         driver.findElement(By.xpath(vekPage.enterToAccountFormButtonLocator)).click();

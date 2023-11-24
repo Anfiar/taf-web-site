@@ -15,7 +15,7 @@ public class KvitkiTest {
 
 
     @Test
-    public void testLoginForm() throws InterruptedException {
+    public void testLoginForm() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         KvitkiPage kvitkiPage = new KvitkiPage(driver);

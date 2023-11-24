@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class KvitkiTest {
 
-    private String loginFormCheckExpectedResult = "Вход";
-    private String emptyEmailTestExpectedResult = "Пожалуйста, заполните поле (Эл. почта)";
-    private String incorrectEmailTestExpectedResult = "Пожалуйста, введите адрес электронной почты в правильном формате: name@example.com";
-    private String emptyPasswordTestExpectedResult = "Пожалуйста, заполните поле (Пароль)";
-    private String notRegisteredUserExpectedResult = "Электронная почта или пароль недействительны. Система была обновлена, и в связи с этим мы перешли на вход по электронной почте.";
+    private final String loginFormCheckExpectedResult = "Вход";
+    private final String emptyEmailTestExpectedResult = "Пожалуйста, заполните поле (Эл. почта)";
+    private final String incorrectEmailTestExpectedResult = "Пожалуйста, введите адрес электронной почты в правильном формате: name@example.com";
+    private final String emptyPasswordTestExpectedResult = "Пожалуйста, заполните поле (Пароль)";
+    private final String notRegisteredUserExpectedResult = "Электронная почта или пароль недействительны. Система была обновлена, и в связи с этим мы перешли на вход по электронной почте.";
 
 
     @Test

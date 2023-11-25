@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class OzPage {
-    private String enterToLoginFormButtonLocator = "//*[@id=\"top-page\"]/header/div[1]/div/div[1]/a";
+    private String enterToLoginFormButtonLocator = "//header/div/div/div/a";
     private String loginFormByEmailLocator = "//*[@id=\"loginFormLoginEmailLink\"]";
-    private String loginFormEmailInputLocator = "//*[@id=\"loginForm\"]/div[2]/div[1]/div[1]/input";
-    private String loginFormPasswordInputLocator = "//*[@id=\"loginForm\"]/div[2]/div[1]/div[2]/input";
+    private String loginFormEmailInputLocator = "//*[@id=\"loginForm\"]//input[@type=\"email\"]";
+    private String loginFormPasswordInputLocator = "//*[@id=\"loginForm\"]//input[@type=\"password\"]";
     private String loginFormSubmitButtonLocator = "//*[@id=\"loginForm\"]/button";
     private String url = "https://oz.by/";
-    private String loginErrorMessage = "/html/body/div[1]/div/div/div[1]/div/div/div[1]/div[3]/div/div[1]/form/div[2]/div[2]/div/div/div";
+    private String loginErrorMessage = "//*[@id=\"test\"]/div/div";
     private String loginPopupIntroLocator = "//*[@id=\"loginPopupIntro\"]";
     private WebDriver driver;
 

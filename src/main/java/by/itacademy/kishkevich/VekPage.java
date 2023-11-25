@@ -5,14 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class VekPage {
-    private String enterToAccountFormButtonLocator = "//*[@id=\"header\"]/div/div[3]/div/div[3]/div/div/div/button";
-    private String enterToLoginFormButtonLocator = "//*[@id=\"userToolsDropDown\"]//button";
+    private String enterToAccountFormButtonLocator = "//button[@class=\"styles_userToolsToggler__c2aHe\"]";
+    private String enterToLoginFormButtonLocator = "//button[@data-testid=\"loginButton\"]";
     private String loginSubmitButtonLocator = "//button[@data-testid=\"loginSubmit\"]";
     private String loginFormEmailInputLocator = "//*[@id=\"login-email\"]";
     private String loginFormPasswordInputLocator = "//*[@id=\"login-password\"]";
     private String url = "https://www.21vek.by/";
-    private String loginEmailErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]";
-    private String loginPasswordErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]";
+    private String loginEmailErrorMessage = "//div[1]/div[3]/span[@class=\"ErrorMessage-module__message\"]";
+    private String loginPasswordErrorMessage = "//div[2]/div[3]/span[@class=\"ErrorMessage-module__message\"]";
     private String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]//button[2]";
     private String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
     private WebDriver driver;

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class OzPage {
-    private String enterToLoginFormButtonLocator = "//header/div/div/div/a";
+    private String enterToLoginFormButtonLocator = "//div[@class=\"user-bar__item\"]";
     private String loginFormByEmailLocator = "//*[@id=\"loginFormLoginEmailLink\"]";
     private String loginFormEmailInputLocator = "//*[@id=\"loginForm\"]//input[@type=\"email\"]";
     private String loginFormPasswordInputLocator = "//*[@id=\"loginForm\"]//input[@type=\"password\"]";

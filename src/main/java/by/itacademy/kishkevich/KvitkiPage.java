@@ -8,13 +8,13 @@ public class KvitkiPage {
     private String cookieDialog = "//div[@id=\"CybotCookiebotDialog\"]";
     private String cookieDialogAccept = "//button[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]";
     private String loginForm = "//app-user-account-link[@tabindex=\"0\"]";
-    private String loginFormCheck = "//*[@id=\"mat-tab-label-0-0\"]/span[2]/span[1]";
-    private String emailInput = "//app-email-input//input";
-    private String passwordInput = "//app-password-input//input";
-    private String enterButton = "//app-user-login-form//app-ui-button";
+    private String loginFormCheck = "//*[@id=\"mat-tab-label-0-0\"]//span[@class=\"mdc-tab__text-label\"]";
+    private String emailInput = "//input[@type=\"email\"]";
+    private String passwordInput = "//input[@type=\"password\"]";
+    private String enterButton = "//button[@class=\"ng-tns-c28-4\"]";
     private String emailErrorMessage = "//app-email-input/app-field-error";
     private String passwordErrorMessage = "//app-password-input/app-field-error";
-    private String loginErrorMessage = "//app-info-dialog-content/div[3]";
+    private String loginErrorMessage = "//div[@class=\"info-text\"]";
     private WebDriver driver;
 
     public KvitkiPage(WebDriver driver) {

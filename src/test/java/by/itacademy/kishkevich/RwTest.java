@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RwTest {
-
     @Test
     public void testLoginForm() throws InterruptedException {
         WebDriver driver = new ChromeDriver();

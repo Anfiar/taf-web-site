@@ -5,17 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class VekPage {
-    String enterToAccountFormButtonLocator = "//*[@id=\"header\"]/div/div[3]/div/div[3]/div/div/div/button";
-    String enterToLoginFormButtonLocator = "//*[@id=\"userToolsDropDown\"]/div/div[1]/div[2]/button";
-    String loginSubmitButtonLocator = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[3]/button";
-    String loginFormEmailInputLocator = "//*[@id=\"login-email\"]";
-    String loginFormPasswordInputLocator = "//*[@id=\"login-password\"]";
-    String url = "https://www.21vek.by/";
-    String loginEmailErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]/span[2]";
-    String loginPasswordErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]";
-    String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]";
-    String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
-    WebDriver driver;
+    private String enterToAccountFormButtonLocator = "//*[@id=\"header\"]/div/div[3]/div/div[3]/div/div/div/button";
+    private String enterToLoginFormButtonLocator = "//*[@id=\"userToolsDropDown\"]/div/div[1]/div[2]/button";
+    private String loginSubmitButtonLocator = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[3]/button";
+    private String loginFormEmailInputLocator = "//*[@id=\"login-email\"]";
+    private String loginFormPasswordInputLocator = "//*[@id=\"login-password\"]";
+    private String url = "https://www.21vek.by/";
+    private String loginEmailErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]/span[2]";
+    private String loginPasswordErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]";
+    private String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]/div/div[2]/div/button[2]";
+    private String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
+    private WebDriver driver;
 
     public VekPage(WebDriver driver) {
         this.driver = driver;

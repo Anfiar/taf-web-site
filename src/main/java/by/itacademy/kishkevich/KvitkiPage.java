@@ -4,18 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class KvitkiPage {
-    String url = "https://www.kvitki.by";
-    String cookieDialog = "//*[@id=\"CybotCookiebotDialog\"]";
-    String cookieDialogAccept = "//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]";
-    String loginForm = "/html/body/div[3]/div[2]/div/app-user-account-link";
-    String loginFormCheck = "//*[@id=\"mat-tab-label-0-0\"]/span[2]/span[1]";
-    String emailInput = "/html/body/div[8]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div/input";
-    String passwordInput = "/html/body/div[8]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/div/input";
-    String enterButton = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-ui-button/button";
-    String emailErrorMessage = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/app-field-error";
-    String passwordErrorMessage = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/app-field-error";
-    String loginErrorMessage = "//*[@id=\"mat-mdc-dialog-1\"]/div/div/app-info-dialog-content/div[3]";
-    WebDriver driver;
+    private String url = "https://www.kvitki.by";
+    private String cookieDialog = "//*[@id=\"CybotCookiebotDialog\"]";
+    private String cookieDialogAccept = "//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]";
+    private String loginForm = "/html/body/div[3]/div[2]/div/app-user-account-link";
+    private String loginFormCheck = "//*[@id=\"mat-tab-label-0-0\"]/span[2]/span[1]";
+    private String emailInput = "/html/body/div[8]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/div/input";
+    private String passwordInput = "/html/body/div[8]/div[2]/div/mat-dialog-container/div/div/app-user-auth-form/div[2]/mat-tab-group/div/mat-tab-body[1]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/div/input";
+    private String enterButton = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-ui-button/button";
+    private String emailErrorMessage = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[1]/app-email-input/app-field-error";
+    private String passwordErrorMessage = "//*[@id=\"mat-tab-content-0-0\"]/div/app-user-login-form/app-collapsible/div/app-form-builder/form/app-collapsible[2]/app-password-input/app-field-error";
+    private String loginErrorMessage = "//*[@id=\"mat-mdc-dialog-1\"]/div/div/app-info-dialog-content/div[3]";
+    private WebDriver driver;
 
     public KvitkiPage(WebDriver driver) {
         this.driver = driver;
@@ -71,8 +71,3 @@ public class KvitkiPage {
         return driver.findElement(By.xpath(loginErrorMessage)).getText();
     }
 }
-
-
-
-
-

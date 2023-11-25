@@ -11,8 +11,8 @@ public class VekPage {
     private String loginFormEmailInputLocator = "//*[@id=\"login-email\"]";
     private String loginFormPasswordInputLocator = "//*[@id=\"login-password\"]";
     private String url = "https://www.21vek.by/";
-    private String loginEmailErrorMessage = "//*[@id=\"default-:r0:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]/span[2]";
-    private String loginPasswordErrorMessage = "//*[@id=\"default-:r0:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]/span[2]";
+    private String loginEmailErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[1]/div[3]";
+    private String loginPasswordErrorMessage = "//*[@id=\"default-:R2mm:-modal\"]/div/div/div[2]/div/div/form/div/div[2]/div[3]";
     private String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]//button[2]";
     private String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
     private WebDriver driver;

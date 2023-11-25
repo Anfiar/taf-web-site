@@ -13,8 +13,8 @@ public class VekPage {
     private String url = "https://www.21vek.by/";
     private String loginEmailErrorMessage = "//div[1]/div[3]/span[@class=\"ErrorMessage-module__message\"]";
     private String loginPasswordErrorMessage = "//div[2]/div[3]/span[@class=\"ErrorMessage-module__message\"]";
-    private String declineCookieFormLocator = "//*[@id=\"modal-cookie\"]//button[2]";
-    private String cookieFormLocator = "//*[@id=\"modal-cookie\"]/div";
+    private String declineCookieFormLocator = "//button[@class=\"Button-module__button AgreementCookie_reject__f5oqP Button-module__gray-secondary\"]";
+    private String cookieFormLocator = "//div[@class=\"AgreementCookie_modal__x3nra\"]";
     private WebDriver driver;
 
     public VekPage(WebDriver driver) {

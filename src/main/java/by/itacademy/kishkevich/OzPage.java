@@ -10,7 +10,7 @@ public class OzPage {
     private String loginFormPasswordInputLocator = "//*[@id=\"loginForm\"]//input[@type=\"password\"]";
     private String loginFormSubmitButtonLocator = "//*[@id=\"loginForm\"]/button";
     private String url = "https://oz.by/";
-    private String loginErrorMessage = "//*[@id=\"test\"]/div/div";
+    private String loginErrorMessage = "//div[@class=\"i-input-group__popover i-input-group__popover_login i-input-group__popover_visible\"]";
     private String loginPopupIntroLocator = "//*[@id=\"loginPopupIntro\"]";
     private WebDriver driver;
 

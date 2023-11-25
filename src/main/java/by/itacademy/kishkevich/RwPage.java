@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 
 public class RwPage {
     private String url = "https://pass.rw.by/ru/";
-    private String loginForm = "//*[@id=\"db\"]//li[@class=\"item_1 cabinet\"]/a";
+    private String loginForm = "//a[@data-target=\"#auth-popup\"]";
     private String emailInput = "//input[@name=\"login\"]";
     private String passwordInput = "//input[@name=\"password\"]";
     private String enterButton = "//input[@name=\"dologin\"]";
     private String emailErrorMessage = "//*[@id=\"login-error\"]";
     private String passwordErrorMessage = "//*[@id=\"password-error\"]";
-    private String loginErrorMessage = "//div[@class=\"danger standalone\"]/div";
+    private String loginErrorMessage = "//div[@class=\"danger standalone\"]";
     private String loginFormCheck = "//div[@class=\"auth-modal__title h3\"]";
     private WebDriver driver;
 

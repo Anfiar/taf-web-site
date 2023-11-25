@@ -13,7 +13,7 @@ public class VekTest {
         VekPage vekPage = new VekPage(driver);
 
         vekPage.getPage();
-
+        Thread.sleep(1000);
         if (vekPage.findCookieForm() != null) {
             vekPage.clickDeclineCookie();
             vekPage.clickDeclineCookie();
@@ -37,7 +37,7 @@ public class VekTest {
         VekPage vekPage = new VekPage(driver);
 
         vekPage.getPage();
-
+        Thread.sleep(1000);
         if (vekPage.findCookieForm() != null) {
             vekPage.clickDeclineCookie();
             vekPage.clickDeclineCookie();
@@ -61,7 +61,7 @@ public class VekTest {
         VekPage vekPage = new VekPage(driver);
 
         vekPage.getPage();
-
+        Thread.sleep(1000);
         if (vekPage.findCookieForm() != null) {
             vekPage.clickDeclineCookie();
             vekPage.clickDeclineCookie();
@@ -85,7 +85,7 @@ public class VekTest {
         VekPage vekPage = new VekPage(driver);
 
         vekPage.getPage();
-
+        Thread.sleep(1000);
         if (vekPage.findCookieForm() != null) {
             vekPage.clickDeclineCookie();
             vekPage.clickDeclineCookie();

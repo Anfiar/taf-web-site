@@ -16,6 +16,8 @@ public class KvitkiPage {
     private String passwordErrorMessage = "//app-password-input/app-field-error";
     private String loginErrorMessage = "//div[@class=\"info-text\"]";
     private WebDriver driver;
+    private String banner = "//div[@class=\"popupbanner\"]";
+    private String closeBanner = "//div[@class=\"popupbanner_close\"]";
 
     public KvitkiPage(WebDriver driver) {
         this.driver = driver;
@@ -69,5 +71,11 @@ public class KvitkiPage {
 
     public String getTextLoginErrorMessage() {
         return driver.findElement(By.xpath(loginErrorMessage)).getText();
+    }
+
+    public void clickCloseBanner() {
+        if (driver.findElement(By.xpath(banner)) != null) {
+            driver.findElement(By.xpath(closeBanner)).click();
+        }
     }
 }

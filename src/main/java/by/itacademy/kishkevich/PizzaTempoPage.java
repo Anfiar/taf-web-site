@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class PizzaTempoPage {
-
     private String url = "https://www.pizzatempo.by/";
     private String pizzaButton = "//img[@alt=\"Пицца\"]";
     private String margaritaOrderButton = "//*[@id=\"1\"]//div[@class=\"order-btn\"]";
@@ -12,7 +11,7 @@ public class PizzaTempoPage {
     private String addToBasketButton = "//div[@id=\"order_pizza_popup\"]//div[@class=\"order-btn\"]";
     private String basketButton = "//div[@class=\"basket-top\"]/div[@class=\"bs-price-col\"]";
     private String itemInBasket = "//div[@id=\"basket_expand\"]//div[@class=\"cart-product-name title\"]";
-    WebDriver driver;
+    private WebDriver driver;
 
     public PizzaTempoPage(WebDriver driver) {
         this.driver = driver;

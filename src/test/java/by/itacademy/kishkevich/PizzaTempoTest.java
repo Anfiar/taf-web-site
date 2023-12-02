@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PizzaTempoTest extends BaseTest {
-    private String pizzaInBusketExpectedResult = "Пицца \"Маргарита\" (31см)";
+    private String pizzaInBusketExpectedResult = "Пицца 'Маргарита' (31см)";
     private String drinkInBusketExpectedResult = "Вода мин. Бонаква среднегазированая 1л";
 
     @Test

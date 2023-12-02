@@ -59,5 +59,4 @@ public class PizzaTempoPage {
     public void clickBonuaquaOrderButton() {
         driver.findElement(By.xpath(bonaquaOrderButton)).click();
     }
-
 }

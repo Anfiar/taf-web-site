@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,8 +18,8 @@ public class VekPage {
     private String cookieFormLocator = "//div[@class=\"AgreementCookie_modal__x3nra\"]";
     private WebDriver driver;
 
-    public VekPage(WebDriver driver) {
-        this.driver = driver;
+    public VekPage() {
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage() {

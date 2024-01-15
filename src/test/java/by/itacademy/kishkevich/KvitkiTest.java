@@ -1,5 +1,6 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.pages.KvitkiPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,7 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void testLoginForm() throws InterruptedException {
-        KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        KvitkiPage kvitkiPage = new KvitkiPage();
         kvitkiPage.getPage();
         kvitkiPage.acceptCookieDialog();
         kvitkiPage.clickCloseBanner();
@@ -23,7 +24,7 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void testEmptyEmailInput() throws InterruptedException {
-        KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        KvitkiPage kvitkiPage = new KvitkiPage();
         kvitkiPage.getPage();
         kvitkiPage.acceptCookieDialog();
         kvitkiPage.clickCloseBanner();
@@ -37,7 +38,7 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void testEmptyPasswordInput() throws InterruptedException {
-        KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        KvitkiPage kvitkiPage = new KvitkiPage();
         kvitkiPage.getPage();
         kvitkiPage.acceptCookieDialog();
         kvitkiPage.clickCloseBanner();
@@ -51,7 +52,7 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void testIncorrectEmailInput() throws InterruptedException {
-        KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        KvitkiPage kvitkiPage = new KvitkiPage();
         kvitkiPage.getPage();
         kvitkiPage.acceptCookieDialog();
         kvitkiPage.clickCloseBanner();
@@ -65,7 +66,7 @@ public class KvitkiTest extends BaseTest {
 
     @Test
     public void testLoginByNotRegisteredUser() throws InterruptedException {
-        KvitkiPage kvitkiPage = new KvitkiPage(driver);
+        KvitkiPage kvitkiPage = new KvitkiPage();
         kvitkiPage.getPage();
         kvitkiPage.acceptCookieDialog();
         kvitkiPage.clickCloseBanner();

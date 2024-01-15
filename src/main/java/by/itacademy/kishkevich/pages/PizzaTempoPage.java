@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -16,8 +17,8 @@ public class PizzaTempoPage {
     private String drinkInBasket = "//div[@id='basket_expand']//tr[@class='item cart-item   chet']//div[@class='cart-product-name title']";
     private WebDriver driver;
 
-    public PizzaTempoPage(WebDriver driver) {
-        this.driver = driver;
+    public PizzaTempoPage() {
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage() {

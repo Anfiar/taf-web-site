@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -19,8 +20,8 @@ public class KvitkiPage {
     private String banner = "//div[@class=\"popupbanner\"]";
     private String closeBanner = "//div[@class=\"popupbanner_close\"]";
 
-    public KvitkiPage(WebDriver driver) {
-        this.driver = driver;
+    public KvitkiPage() {
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage() {

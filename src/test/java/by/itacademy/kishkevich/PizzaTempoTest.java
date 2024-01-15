@@ -1,5 +1,6 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.pages.PizzaTempoPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,7 @@ public class PizzaTempoTest extends BaseTest {
 
     @Test
     public void testOrderMargarita() throws InterruptedException {
-        PizzaTempoPage pizzaTempoPage = new PizzaTempoPage(driver);
+        PizzaTempoPage pizzaTempoPage = new PizzaTempoPage();
         pizzaTempoPage.getPage();
         pizzaTempoPage.clickPizzaButton();
         pizzaTempoPage.clickMargaritaSizeButton();
@@ -23,7 +24,7 @@ public class PizzaTempoTest extends BaseTest {
 
     @Test
     public void testOrderMargaritaAndBonaqua() throws InterruptedException {
-        PizzaTempoPage pizzaTempoPage = new PizzaTempoPage(driver);
+        PizzaTempoPage pizzaTempoPage = new PizzaTempoPage();
         pizzaTempoPage.getPage();
         pizzaTempoPage.clickPizzaButton();
         pizzaTempoPage.clickMargaritaSizeButton();

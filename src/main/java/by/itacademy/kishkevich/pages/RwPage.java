@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,8 +16,8 @@ public class RwPage {
     private String loginFormCheck = "//div[@class=\"auth-modal__title h3\"]";
     private WebDriver driver;
 
-    public RwPage(WebDriver driver) {
-        this.driver = driver;
+    public RwPage() {
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage() {

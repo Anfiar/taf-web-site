@@ -1,5 +1,6 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.pages.VekPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +11,7 @@ public class VekTest {
     public void testLoginWithEmptyField() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        VekPage vekPage = new VekPage(driver);
+        VekPage vekPage = new VekPage();
 
         vekPage.getPage();
         Thread.sleep(1000);
@@ -34,7 +35,7 @@ public class VekTest {
     public void testLoginWithoutEmail() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        VekPage vekPage = new VekPage(driver);
+        VekPage vekPage = new VekPage();
 
         vekPage.getPage();
         Thread.sleep(1000);
@@ -58,7 +59,7 @@ public class VekTest {
     public void testLoginWithoutPassword() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        VekPage vekPage = new VekPage(driver);
+        VekPage vekPage = new VekPage();
 
         vekPage.getPage();
         Thread.sleep(1000);
@@ -82,7 +83,7 @@ public class VekTest {
     public void testLoginByNotRegisteredUser() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        VekPage vekPage = new VekPage(driver);
+        VekPage vekPage = new VekPage();
 
         vekPage.getPage();
         Thread.sleep(1000);

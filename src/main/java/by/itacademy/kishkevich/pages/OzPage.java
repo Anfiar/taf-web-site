@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,8 +15,8 @@ public class OzPage {
     private String loginPopupIntroLocator = "//*[@id=\"loginPopupIntro\"]";
     private WebDriver driver;
 
-    public OzPage(WebDriver driver){
-        this.driver = driver;
+    public OzPage(){
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage(){

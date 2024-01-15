@@ -1,5 +1,6 @@
-package by.itacademy.kishkevich;
+package by.itacademy.kishkevich.pages;
 
+import by.itacademy.kishkevich.driver.MyDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,8 +13,8 @@ public class DominosPage {
     private String itemInBasket = "//div[@class='cart-button__mini-bag-products-wrapper']//div[@class='product-card__title']";
     private WebDriver driver;
 
-    public DominosPage(WebDriver driver) {
-        this.driver = driver;
+    public DominosPage() {
+        this.driver = MyDriver.getDriver();
     }
 
     public void getPage() {

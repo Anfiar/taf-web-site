@@ -1,8 +1,11 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.domain.User;
+import by.itacademy.kishkevich.pages.OzPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OzTest {
@@ -10,13 +13,13 @@ public class OzTest {
     public void testLoginByNotRegisteredUser() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        OzPage ozPage = new OzPage(driver);
+        OzPage ozPage = new OzPage();
 
         ozPage.getPage();
         ozPage.clickLoginFormButton();
         ozPage.clickLoginFormByEmail();
-        ozPage.sendKeysEmailInput("test99@gmail.com");
-        ozPage.sendKeysPasswordInput("12345");
+        ozPage.sendKeysEmailInput(User.getRandomEmail());
+        ozPage.sendKeysPasswordInput(User.getRandomPassword());
         ozPage.clickSubmitButton();
         Thread.sleep(1000);
 
@@ -29,7 +32,7 @@ public class OzTest {
     public void testEnterButton() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        OzPage ozPage = new OzPage(driver);
+        OzPage ozPage = new OzPage();
 
         ozPage.getPage();
         ozPage.clickLoginFormButton();

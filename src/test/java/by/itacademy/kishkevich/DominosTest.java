@@ -1,5 +1,6 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.pages.DominosPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +9,7 @@ public class DominosTest extends BaseTest {
 
     @Test
     public void testMargaritaOrder() {
-        DominosPage dominosPage = new DominosPage(driver);
+        DominosPage dominosPage = new DominosPage();
         dominosPage.getPage();
         dominosPage.clickPopupClose();
         dominosPage.clickMargaritaAddToBasketButton();

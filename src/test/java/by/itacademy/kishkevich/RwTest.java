@@ -1,5 +1,6 @@
 package by.itacademy.kishkevich;
 
+import by.itacademy.kishkevich.pages.RwPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +11,7 @@ public class RwTest {
     public void testLoginForm() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        RwPage rwPage = new RwPage(driver);
+        RwPage rwPage = new RwPage();
         rwPage.getPage();
         rwPage.clickLoginForm();
         Thread.sleep(1000);
@@ -22,7 +23,7 @@ public class RwTest {
     public void testLoginWithEmptyField() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        RwPage rwPage = new RwPage(driver);
+        RwPage rwPage = new RwPage();
         rwPage.getPage();
         rwPage.clickLoginForm();
         Thread.sleep(1000);
@@ -37,7 +38,7 @@ public class RwTest {
     public void testEmptyPasswordInput() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        RwPage rwPage = new RwPage(driver);
+        RwPage rwPage = new RwPage();
         rwPage.getPage();
         rwPage.clickLoginForm();
         Thread.sleep(1000);
@@ -52,7 +53,7 @@ public class RwTest {
     public void testLoginByNotRegisteredUser() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        RwPage rwPage = new RwPage(driver);
+        RwPage rwPage = new RwPage();
         rwPage.getPage();
         rwPage.clickLoginForm();
         Thread.sleep(1000);
